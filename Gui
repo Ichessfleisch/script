@@ -105,35 +105,35 @@ TextLabel.TextColor3 = Color3.new(0, 0, 0)
 TextLabel.TextSize = 25
 TextLabel.TextStrokeTransparency = 0.6000000238418579
 
-DupeStatus.Name = "Dupe Status"
-DupeStatus.Parent = Frame_3
-DupeStatus.BackgroundColor3 = Color3.new(0.513726, 0.513726, 0.513726)
-DupeStatus.BorderColor3 = Color3.new(0, 0, 0)
-DupeStatus.BorderSizePixel = 0
-DupeStatus.Position = UDim2.new(-0.0246478878, 0, 0.257352948, 0)
-DupeStatus.Size = UDim2.new(0, 194, 0, 40)
-DupeStatus.Font = Enum.Font.SourceSans
-DupeStatus.Text = "  Dupe Status✅"
-DupeStatus.TextColor3 = Color3.new(0, 0, 0)
-DupeStatus.TextSize = 41
-DupeStatus.TextStrokeTransparency = 0.6399999856948853
+FastHatch.Name = "Fast Hatch"
+FastHatch.Parent = Frame_3
+FastHatch.BackgroundColor3 = Color3.new(0.513726, 0.513726, 0.513726)
+FastHatch.BorderColor3 = Color3.new(0, 0, 0)
+FastHatch.BorderSizePixel = 0
+FastHatch.Position = UDim2.new(-0.0246478878, 0, 0.257352948, 0)
+FastHatch.Size = UDim2.new(0, 194, 0, 40)
+FastHatch.Font = Enum.Font.SourceSans
+FastHatch.Text = "  Auto Hatch Status✅"
+FastHatch.TextColor3 = Color3.new(0, 0, 0)
+FastHatch.TextSize = 41
+FastHatch.TextStrokeTransparency = 0.6399999856948853
 
 UICorner.Parent = InfoButton
 
-DupeButton.Name = "Dupe Button"
-DupeButton.Parent = Frame_2
-DupeButton.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
-DupeButton.BorderColor3 = Color3.new(0, 0, 0)
-DupeButton.BorderSizePixel = 0
-DupeButton.Position = UDim2.new(0.034679316, 0, 0.484573931, 0)
-DupeButton.Size = UDim2.new(0, 98, 0, 39)
-DupeButton.Font = Enum.Font.SourceSans
-DupeButton.Text = "Dupe"
-DupeButton.TextColor3 = Color3.new(0, 0, 0)
-DupeButton.TextSize = 45
-DupeButton.TextStrokeTransparency = 0
+FastHatchButton.Name = "Fast Hatch Button"
+FastHatchButton.Parent = Frame_2
+FastHatchButton.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+FastHatchButton.BorderColor3 = Color3.new(0, 0, 0)
+FastHatchButton.BorderSizePixel = 0
+FastHatchButton.Position = UDim2.new(0.034679316, 0, 0.484573931, 0)
+FastHatchButton.Size = UDim2.new(0, 98, 0, 39)
+FastHatchButton.Font = Enum.Font.SourceSans
+FastHatchButton.Text = "Fast Hatch"
+FastHatchButton.TextColor3 = Color3.new(0, 0, 0)
+FastHatchButton.TextSize = 45
+FastHatchButton.TextStrokeTransparency = 0
 
-local button1 = DupeButton
+local button1 = FastHatchButton
 
 local function leftClick1()
 	Frame_3.Visible = false
@@ -146,9 +146,9 @@ end
 
 button1.MouseButton1Click:Connect(leftClick1)
 
-UICorner_2.Parent = DupeButton
+UICorner_2.Parent = FastHatchButton
 
-Frame_4.Parent = DupeButton
+Frame_4.Parent = FastButton
 Frame_4.Visible = false
 Frame_4.BackgroundColor3 = Color3.new(0.513726, 0.513726, 0.513726)
 Frame_4.BorderColor3 = Color3.new(0, 0, 0)
