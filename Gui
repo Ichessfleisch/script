@@ -146,7 +146,7 @@ end
 
 button1.MouseButton1Click:Connect(leftClick1)
 
-UICorner_2.Parent = FastHatchButton
+UICorner_2.Parent = FastHatch
 
 Frame_4.Parent = FastButton
 Frame_4.Visible = false
