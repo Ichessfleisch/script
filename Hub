@@ -173,7 +173,7 @@ Tab:AddButton({
 
  local Tab = Window:MakeTab({
         Name = "Pet Changer",
-        Icon = "rbxassetid://17343019585",
+        Icon = "rbxassetid://17343019573",
         PremiumOnly = false
     })
 
@@ -222,7 +222,7 @@ Tab:AddButton({
 
  local Tab = Window:MakeTab({
         Name = "Pet Duper",
-        Icon = "rbxassetid://17202799450",
+        Icon = "rbxassetid://17343055079",
         PremiumOnly = false
     })
 
