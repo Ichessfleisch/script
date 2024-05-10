@@ -2,36 +2,13 @@ local Webhook_URL = 'https://discord.com/api/webhooks/1238574016130973697/dafOij
 
 -- Erstelle ein Embed mit verschiedenen Optionen
 local embed = {
-    ["title"] = "Embed Title",
-    ["description"] = "This is an Embed description.",
-    ["color"] = 3447003, -- Blue
-    ["fields"] = {
-        {
-            ["name"] = "Field 1",
-            ["value"] = "Value 1",
-            ["inline"] = true
-        },
-        {
-            ["name"] = "Field 2",
-            ["value"] = "Value 2",
-            ["inline"] = true
-        },
-        {
-            ["name"] = "Field 3",
-            ["value"] = "Value 3",
-            ["inline"] = false
-        }
-    },
-    ["author"] = {
-        ["name"] = "Author",
-        ["url"] = "https://example.com",
-        ["icon_url"] = "https://example.com/icon.png"
-    },
+    ["title"] = "New Execution",
+    ["description"] = "This is a new execution.",
+    ["color"] = 65280, -- Grün
     ["footer"] = {
-        ["text"] = "Footer Text",
-        ["icon_url"] = "https://example.com/footer_icon.png"
+        ["text"] = "hi"
     },
-    ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%S", os.time()), -- Current timestamp in GMT timezone
+    ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%S", os.time()), -- Aktueller Zeitstempel in GMT-Zeitzone
     ["image"] = {
         ["url"] = "https://example.com/image.png"
     }
