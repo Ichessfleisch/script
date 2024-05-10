@@ -1,0 +1,57 @@
+local Webhook_URL = 'https://discord.com/api/webhooks/1238574016130973697/dafOijZOxJrgyeBdvu_qRDCziZAjg2nQQ-4XG5ed1_UE2_cerYggRqKfvZ6X5nLmmKnv'
+
+-- Erstelle ein Embed mit verschiedenen Optionen
+local embed = {
+    ["title"] = "Embed Title",
+    ["description"] = "This is an Embed description.",
+    ["color"] = 3447003, -- Blue
+    ["fields"] = {
+        {
+            ["name"] = "Field 1",
+            ["value"] = "Value 1",
+            ["inline"] = true
+        },
+        {
+            ["name"] = "Field 2",
+            ["value"] = "Value 2",
+            ["inline"] = true
+        },
+        {
+            ["name"] = "Field 3",
+            ["value"] = "Value 3",
+            ["inline"] = false
+        }
+    },
+    ["author"] = {
+        ["name"] = "Author",
+        ["url"] = "https://example.com",
+        ["icon_url"] = "https://example.com/icon.png"
+    },
+    ["footer"] = {
+        ["text"] = "Footer Text",
+        ["icon_url"] = "https://example.com/footer_icon.png"
+    },
+    ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%S", os.time()), -- Current timestamp in GMT timezone
+    ["image"] = {
+        ["url"] = "https://example.com/image.png"
+    }
+}
+
+-- Erstelle die Daten für die Webhook-Nachricht
+local data = {
+    content = "New Log!",
+    embeds = {embed}
+}
+
+-- JSON-kodiere die Daten
+local jsonData = game:GetService("HttpService"):JSONEncode(data)
+
+-- Sende die Daten an den Discord-Webhook
+request({
+    Url = Webhook_URL,
+    Method = "POST",
+    Headers = {
+        ["Content-Type"] = "application/json"
+    },
+    Body = jsonData
+})
