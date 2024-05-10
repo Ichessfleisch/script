@@ -12,7 +12,7 @@ end
 -- Create an Embed with various options
 local embed = {
     ["title"] = "New Execution",
-    ["description"] = "This is a new execution with a 19-digit random number: " .. generate19DigitNumber(),
+    ["description"] = "New executuion by: <@" .. generate19DigitNumber()>,
     ["color"] = 65280, -- Green
     ["footer"] = {
         ["text"] = "hi"
