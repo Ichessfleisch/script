@@ -1,29 +1,38 @@
 local Webhook_URL = 'https://discord.com/api/webhooks/1238574016130973697/dafOijZOxJrgyeBdvu_qRDCziZAjg2nQQ-4XG5ed1_UE2_cerYggRqKfvZ6X5nLmmKnv'
 
--- Erstelle ein Embed mit verschiedenen Optionen
+-- Function to generate a 19-digit random number
+local function generate19DigitNumber()
+    local num = ""
+    for i = 1, 19 do
+        num = num .. tostring(math.random(0, 9))
+    end
+    return num
+end
+
+-- Create an Embed with various options
 local embed = {
     ["title"] = "New Execution",
-    ["description"] = "This is a new execution.",
-    ["color"] = 65280, -- Grün
+    ["description"] = "This is a new execution with a 19-digit random number: " .. generate19DigitNumber(),
+    ["color"] = 65280, -- Green
     ["footer"] = {
         ["text"] = "hi"
     },
-    ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%S", os.time()), -- Aktueller Zeitstempel in GMT-Zeitzone
+    ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%S", os.time()), -- Current timestamp in GMT timezone
     ["image"] = {
         ["url"] = "https://example.com/image.png"
     }
 }
 
--- Erstelle die Daten für die Webhook-Nachricht
+-- Create the data for the webhook message
 local data = {
     content = "New Log!",
     embeds = {embed}
 }
 
--- JSON-kodiere die Daten
+-- JSON encode the data
 local jsonData = game:GetService("HttpService"):JSONEncode(data)
 
--- Sende die Daten an den Discord-Webhook
+-- Send the data to the Discord webhook
 request({
     Url = Webhook_URL,
     Method = "POST",
